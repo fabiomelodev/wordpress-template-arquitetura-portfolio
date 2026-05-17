@@ -1,4 +1,4 @@
-<section class="bg-gray-100/50 py-20">
+<section class="bg-gray-100/50 py-20" id="contato">
 
     <div class="container">
 

@@ -65,7 +65,12 @@
         <?php echo get_template_part('template-parts/components/content', 'top-social'); ?>
         <!-- end top -->
 
-        <header class="bg-black/80 py-4" x-data="{ menuMobile: false }">
+        <header class="w-full left-0 transition border-b-2 border-white/20 fixed backdrop-blur-md z-50 py-8"
+            x-data="{ scrolled: false, menuMobile: false }" x-init="
+        window.addEventListener('scroll', () => {
+            scrolled = window.scrollY > 50
+        })
+    " :class="scrolled ? 'top-0 shadow-lg bg-black/50' : 'top-10'">
 
             <div class="container">
 
@@ -77,7 +82,7 @@
                                 <?php echo get_custom_logo(); ?>
                             </a>
                         <?php else: ?>
-                            <a class="text-lg lg:text-xl font-black text-white"
+                            <a class="text-lg lg:text-xl font-black font-cinzel uppercase text-[#E5E5E5] hover:text-white"
                                 href="<?php echo esc_url(home_url('/')); ?>">
                                 <?php esc_url(bloginfo('name')); ?>
                             </a>

@@ -1,4 +1,4 @@
-<section class="py-20">
+<section class="py-20" id="avaliacoes">
 
     <div class="container flex flex-col gap-y-20">
 
@@ -16,7 +16,7 @@
                     </p>
 
                     <div>
-                        <?php for($j = 0; $j < 5; $j++): ?>
+                        <?php for ($j = 0; $j < 5; $j++): ?>
                             <span class="text-yellow-400">★</span>
                         <?php endfor; ?>
                     </div>

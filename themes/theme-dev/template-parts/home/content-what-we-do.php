@@ -1,58 +1,37 @@
 <section class="bg-gray-100/50 py-20">
 
-    <div class="container">
+    <div class="container flex flex-wrap">
 
-        <div>
+        <div class="w-10/12">
 
             <h2 class="section-title">
                 O que fazemos
             </h2>
 
-            <p class="section-description">
-                Trabalhamos com o estilo contemporâneo e atemporal, onde buscamos entender o gosto do cliente e aplicar
-                de forma personalizada, com um toque de decoração afetiva para ser sentida, com características únicas e
-                sempre diferente uns dos outros, acreditamos que um lar deve refletir seus moradores.
-            </p>
+            <?php if (get_field('o_que_fazemos_descricao')): ?>
+                <p class="section-description">
+                    <?php echo get_field('o_que_fazemos_descricao'); ?>
+                </p>
+            <?php endif; ?>
         </div>
 
-        <div class="grid grid-cols-4 gap-10 mt-20">
-            <?php
-            $items = [
-                [
-                    'name' => 'Arquitetura',
-                    'description' => 'A empresa de design de interiores oferece um serviço completo, que atende às necessidades dos clientes e cria projetos que atendam aos seus sonhos.'
-                ],
+        <?php if (get_field('o_que_fazemos_itens')): ?>
+            <div class="grid grid-cols-4 gap-10 mt-20">
+                <?php foreach (get_field('o_que_fazemos_itens') as $item): ?>
+                    <div
+                        class="hover:-translate-y-6 transition hover:shadow-2xl rounded-lg border border-gray-100 relative bg-white py-10 px-8">
+                        <div class="w-1 h-4 top-1/2 -translate-y-1/2 right-full absolute bg-black"></div>
 
-                [
-                    'name' => 'Designe de  interiores',
-                    'description' => 'Planejamos o desenvolvimento de projetos para áreas residenciais e comerciais especificando itens necessários para que o ambiente fique completo.'
-                ],
+                        <h6 class="text-lg font-bold text-center uppercase font-cinzel">
+                            <?php echo $item['titulo']; ?>
+                        </h6>
 
-                [
-                    'name' => 'Assesoria de obra',
-                    'description' => 'Tem caráter preventivo e busca conferir a qualidade dos serviços, atestando e documentando a instalação do projeto executado. '
-                ],
-
-                [
-                    'name' => 'Consultoria decorativa',
-                    'description' => 'Para ambientes com a arquitetura pronta que não precisem de reforma, apenas melhorar o espaço de forma rápida, eficaz com itens de decoração. '
-                ],
-            ];
-            ?>
-            <?php foreach ($items as $item): ?>
-                <div
-                    class="hover:-translate-y-6 transition hover:shadow-2xl rounded-lg border border-gray-100 relative bg-white py-10 px-8">
-                    <div class="w-1 h-4 top-1/2 -translate-y-1/2 right-full absolute bg-black"></div>
-
-                    <h6 class="text-lg font-bold text-center uppercase font-cinzel">
-                        <?php echo $item['name']; ?>
-                    </h6>
-
-                    <p class="font-normal text-center mt-10">
-                        <?php echo $item['description']; ?>
-                    </p>
-                </div>
-            <?php endforeach; ?>
-        </div>
+                        <p class="font-normal text-center mt-10">
+                            <?php echo $item['descricao']; ?>
+                        </p>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
     </div>
 </section>
