@@ -24,7 +24,13 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'cinzel': 'Cinzel',
+        'roboto': 'Roboto',
+        'poppins': 'Poppins',
+      },
+    },
   },
   plugins: [],
 };

@@ -24,9 +24,34 @@ get_header();
 			<!-- banner -->
 			<?php echo get_template_part('template-parts/home/content', 'banner'); ?>
 			<!-- end banner -->
-			<h1 class="text-5xl font-black text-center py-10">
-				<?php the_title() ?>
-			</h1>
+
+			<!-- about -->
+			<?php echo get_template_part('template-parts/home/content', 'about'); ?>
+			<!-- end about -->
+
+			<!-- what we do -->
+			<?php echo get_template_part('template-parts/home/content', 'what-we-do'); ?>
+			<!-- end what we do -->
+
+			<!-- budget -->
+			<?php echo get_template_part('template-parts/home/content', 'budget'); ?>
+			<!-- end budget -->
+
+			<!-- projects -->
+			<?php echo get_template_part('template-parts/home/content', 'projects'); ?>
+			<!-- end projects -->
+
+			<!-- budget second -->
+			<?php echo get_template_part('template-parts/home/content', 'budget-second'); ?>
+			<!-- end budget second -->
+
+			<!-- ratings -->
+			<?php echo get_template_part('template-parts/home/content', 'ratings'); ?>
+			<!-- end ratings -->
+
+			<!-- contact -->
+			<?php echo get_template_part('template-parts/home/content', 'contact'); ?>
+			<!-- end contact -->
 		<?php endwhile; ?>
 
 	</main><!-- #main -->

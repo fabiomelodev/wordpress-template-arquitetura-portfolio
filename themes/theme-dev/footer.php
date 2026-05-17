@@ -17,25 +17,26 @@
 </div><!-- #page -->
 
 <!-- footer -->
-<footer class="bg-black/80 py-8">
+<footer class="bg-[#87928B] py-20">
 
     <div class="container grid grid-cols-1 lg:grid-cols-3 gap-y-20 gap-x-4">
 
         <div>
-            <h3 class="text-xl font-black text-white">
+            <h3 class="text-xl font-bold font-cinzel uppercase text-white">
                 Sobre
             </h3>
 
-            <p class="text-xs font-medium text-white/80 mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam reiciendis voluptatibus natus in.
-                Excepturi dolorum enim aliquam deleniti deserunt? Libero eius dolor corrupti tempore sunt, eaque cum
-                saepe repellendus!
+            <p class="text-xs font-normal text-[#E0E0E0] mt-4">
+                Formada em Arquitetura e Designer de interiores pelo Centro universitário Belas Artes de São Paulo, atua
+                há quase 17 anos no mercado, onde adquiriu experiencia em escritórios renomados da grande são Paulo,
+                focada em reformas e decoração, hoje comanda sua própria sua equipe, onde já soma mais de 60 projetos
+                residenciais e comerciais.
             </p>
         </div>
 
         <div class="flex lg:justify-center">
             <div>
-                <h3 class="text-xl font-black text-white">
+                <h3 class="text-xl font-bold font-cinzel uppercase text-white">
                     Redes sociais
                 </h3>
 

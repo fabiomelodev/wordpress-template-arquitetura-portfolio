@@ -5,11 +5,39 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: 'Montserrat';
+    font-family: 'Roboto', sans-serif;
   }
 }
 
-@layer components {}
+@layer components {
+  .section-title {
+    @apply text-5xl font-bold font-cinzel uppercase text-[#3D3D3D] mb-8;
+  }
+
+  .section-description {
+    @apply text-xl font-normal text-[#3D3D3D];
+  }
+
+  .project-item {
+    @apply grid grid-cols-12;
+  }
+
+  .project-item:nth-of-type(odd) .project-item-col:nth-of-type(odd) {
+    @apply order-1 pr-40;
+  }
+
+  .project-item:nth-of-type(odd) .project-item-col:nth-of-type(even) {
+    @apply order-2;
+  }
+
+  .project-item:nth-of-type(even) .project-item-col:nth-of-type(odd) {
+    @apply order-2 pl-40;
+  }
+
+  .project-item:nth-of-type(even) .project-item-col:nth-of-type(even) {
+    @apply order-1;
+  }
+}
 
 .swiper-button-pattern {
   width: 3.5rem !important;
