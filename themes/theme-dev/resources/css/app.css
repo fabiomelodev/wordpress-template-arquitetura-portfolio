@@ -10,20 +10,24 @@
 }
 
 @layer components {
+  .btn-pattern {
+    @apply transition hover:scale-110 rounded-full hover:opacity-90 text-sm lg:text-base font-medium font-poppins text-center uppercase py-4 px-8;
+  }
+
   .section-title {
-    @apply text-5xl font-bold font-cinzel uppercase text-[#3D3D3D] mb-8;
+    @apply text-2xl lg:text-5xl font-bold font-cinzel uppercase text-[#3D3D3D] mb-8;
   }
 
   .section-description {
-    @apply text-xl font-normal text-[#3D3D3D];
+    @apply text-base lg:text-xl font-normal text-[#3D3D3D];
   }
 
   .project-item {
-    @apply grid grid-cols-12;
+    @apply grid grid-cols-12 gap-y-6 xl:gap-y-0;
   }
 
   .project-item:nth-of-type(odd) .project-item-col:nth-of-type(odd) {
-    @apply order-1 pr-40;
+    @apply order-1 lg:pr-40;
   }
 
   .project-item:nth-of-type(odd) .project-item-col:nth-of-type(even) {
@@ -31,11 +35,27 @@
   }
 
   .project-item:nth-of-type(even) .project-item-col:nth-of-type(odd) {
-    @apply order-2 pl-40;
+    @apply order-1 xl:order-2 xl:pl-40 lg:pr-40 xl:pr-0;
   }
 
   .project-item:nth-of-type(even) .project-item-col:nth-of-type(even) {
     @apply order-1;
+  }
+
+  .iframe-map {
+    @apply w-full h-[300px] lg:h-full;
+  }
+
+  .iframe-map iframe {
+    @apply w-full h-full;
+  }
+
+  .modal-projects {
+    @apply inset-0 fixed hidden justify-center items-center bg-black/50 z-50;
+  }
+
+  .modal-projects.is-active {
+    @apply flex;
   }
 }
 

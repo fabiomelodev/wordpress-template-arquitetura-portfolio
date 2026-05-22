@@ -1,8 +1,8 @@
 <section class="py-20" id="sobre">
 
-    <div class="container flex justify-between mx-auto">
+    <div class="container flex flex-wrap justify-between mx-auto">
 
-        <div class="w-4/12">
+        <div class="lg:w-4/12">
 
             <div class="h-[570px] relative p-10">
                 <?php if (get_field('sobre_primeira_imagem')): ?>
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="w-4/12">
+        <div class="lg:w-4/12 mt-6 lg:mt-0">
             <?php if (get_field('sobre_nome')): ?>
                 <h2 class="section-title">
                     <?php echo get_field('sobre_nome'); ?>
@@ -41,7 +41,7 @@
                 </p>
             <?php endif; ?>
 
-            <div class="grid grid-cols-2 gap-x-6 mt-12 pr-16">
+            <div class="grid grid-cols-2 gap-x-6 mt-12 lg:pr-16">
 
                 <?php if (get_field('sobre_imoveis_reformados')): ?>
                     <div class="shadow-lg rounded-lg relative flex flex-col items-center gap-y-2 bg-gray-100/50 p-4">

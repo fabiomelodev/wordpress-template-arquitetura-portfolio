@@ -14,6 +14,19 @@ function projects_post_type()
 
 add_action('init', 'projects_post_type');
 
+function ratings_post_type()
+{
+    register_post_type('avaliacao', array(
+        'labels' => array('name' => 'Avaliações', 'singular_name' => 'Avaliação', 'all_items' => 'Todas'),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'supports' => array('title', 'editor')
+    ));
+}
+
+add_action('init', 'ratings_post_type');
+
 // function create_taxonomy()
 // {
 //     $post_types = array('evento');

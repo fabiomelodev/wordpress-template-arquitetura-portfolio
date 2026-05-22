@@ -39,7 +39,7 @@ get_header();
 
 			<!-- projects -->
 			<?php echo get_template_part('template-parts/home/content', 'projects'); ?>
-			<!-- end projects -->
+			<!--end projects -->
 
 			<!-- budget second -->
 			<?php echo get_template_part('template-parts/home/content', 'budget-second'); ?>

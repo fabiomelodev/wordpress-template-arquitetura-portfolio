@@ -16,7 +16,7 @@
         </div>
 
         <?php if (get_field('o_que_fazemos_itens')): ?>
-            <div class="grid grid-cols-4 gap-10 mt-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-10 mt-20">
                 <?php foreach (get_field('o_que_fazemos_itens') as $item): ?>
                     <div
                         class="hover:-translate-y-6 transition hover:shadow-2xl rounded-lg border border-gray-100 relative bg-white py-10 px-8">
@@ -26,7 +26,7 @@
                             <?php echo $item['titulo']; ?>
                         </h6>
 
-                        <p class="font-normal text-center mt-10">
+                        <p class="text-sm lg:text-base font-normal text-center mt-10">
                             <?php echo $item['descricao']; ?>
                         </p>
                     </div>

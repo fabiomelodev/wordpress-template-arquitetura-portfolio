@@ -18,6 +18,8 @@ module.exports = {
     "lg:col-span-2",
     "lg:col-span-3",
     "btn-member-submit",
+    "modal-miniature-item",
+    "object-contain"
   ],
   theme: {
     container: {
