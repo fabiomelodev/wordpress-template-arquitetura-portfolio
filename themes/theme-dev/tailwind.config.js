@@ -18,13 +18,21 @@ module.exports = {
     "lg:col-span-2",
     "lg:col-span-3",
     "btn-member-submit",
+    "modal-miniature-item",
+    "object-contain"
   ],
   theme: {
     container: {
       center: true,
       padding: "1rem",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'cinzel': 'Cinzel',
+        'roboto': 'Roboto',
+        'poppins': 'Poppins',
+      },
+    },
   },
   plugins: [],
 };

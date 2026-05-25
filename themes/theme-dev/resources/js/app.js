@@ -9,4 +9,5 @@ Alpine.start();
   window.$ = window.jQuery = jQuery;
 
   require("./components/swiper");
+  require("./components/modal-projects");
 })();
