@@ -17,8 +17,12 @@ if (get_field('segundo_orcamento_imagem_de_fundo')) {
                 Transforme seu apartamento em um espaço único e especial
             </p>
 
-            <a class="btn-pattern border border-white text-white hover:text-[#87928B]/90 hover:bg-white" href="#">
-                Faça orçamento
+            <a class="btn-pattern border border-white text-white hover:text-[#87928B]/90 hover:bg-white"
+                href="<?php echo get_field('segundo_orcamento_botao_de_acao')['url'] ? get_field('segundo_orcamento_botao_de_acao')['url'] : '#'; ?>"
+                title="<?php echo get_field('segundo_orcamento_botao_de_acao')['title'] ? get_field('segundo_orcamento_botao_de_acao')['title'] : ''; ?>"
+                target="<?php echo get_field('segundo_orcamento_botao_de_acao')['target'] ? get_field('segundo_orcamento_botao_de_acao')['target'] : ''; ?>"
+                rel="noreferrer noopener">
+                <?php echo get_field('segundo_orcamento_botao_de_acao')['title'] ? get_field('segundo_orcamento_botao_de_acao')['title'] : 'Faça orçamento'; ?>
             </a>
         </div>
     </div>

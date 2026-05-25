@@ -21,8 +21,13 @@
                     </p>
                 <?php endif; ?>
 
-                <a class="btn-pattern text-white bg-btn" href="#">
-                    Faça orçamento
+
+                <a class="btn-pattern text-white bg-btn"
+                    href="<?php echo get_field('orcamento_botao_de_acao')['url'] ? get_field('orcamento_botao_de_acao')['url'] : '#'; ?>"
+                    title="<?php echo get_field('orcamento_botao_de_acao')['title'] ? get_field('orcamento_botao_de_acao')['title'] : ''; ?>"
+                    target="<?php echo get_field('orcamento_botao_de_acao')['target'] ? get_field('orcamento_botao_de_acao')['target'] : ''; ?>"
+                    rel="noreferrer noopener">
+                    <?php echo get_field('orcamento_botao_de_acao')['title'] ? get_field('orcamento_botao_de_acao')['title'] : 'Faça orçamento'; ?>
                 </a>
             </div>
         </div>
