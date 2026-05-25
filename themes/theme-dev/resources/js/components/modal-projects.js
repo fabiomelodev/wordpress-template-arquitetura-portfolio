@@ -5,14 +5,17 @@ import "swiper/css/pagination";
 
 const modal = document.querySelector('.js-projects-modal');
 
-const modalClose = document.querySelector('.js-modal-close');
+const modalCloses = document.querySelectorAll('.js-modal-close');
 
 const modalSwiperWrapper = document.querySelector('.js-modal-projects-wrapper');
 
-modalClose.addEventListener('click', () => {
-    modal.classList.remove('is-active');
-    const swiperWrapper = document.querySelector('.js-modal-projects-wrapper');
-    swiperWrapper.innerHTML = '';
+modalCloses.forEach(close => {
+    close.addEventListener('click', () => {
+        modal.classList.remove('is-active');
+        const swiperWrapper = document.querySelector('.js-modal-projects-wrapper');
+        swiperWrapper.innerHTML = '';
+    }
+    );
 });
 
 const openModalButtons = document.querySelectorAll('.js-project-open-modal');

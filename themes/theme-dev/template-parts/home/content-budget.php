@@ -16,12 +16,12 @@
             <div
                 class="w-full lg:w-1/2 h-full flex flex-col justify-center items-center gap-y-6 py-10 lg:py-16 px-4 lg:px-24">
                 <?php if (get_field('orcamento_descricao')): ?>
-                    <p class="section-description text-center">
+                    <p class="section-description text-center text-color">
                         <?php echo get_field('orcamento_descricao'); ?>
                     </p>
                 <?php endif; ?>
 
-                <a class="btn-pattern text-white bg-[#87928B]" href="#">
+                <a class="btn-pattern text-white bg-btn" href="#">
                     Faça orçamento
                 </a>
             </div>

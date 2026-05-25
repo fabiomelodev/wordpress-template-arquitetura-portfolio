@@ -3,7 +3,7 @@
     <div class="container flex flex-col gap-y-10 xl:gap-y-20">
 
         <div>
-            <h2 class="section-title text-center">
+            <h2 class="section-title text-center title-color">
                 Avaliações
             </h2>
         </div>
@@ -37,9 +37,9 @@
                                         <?php endfor; ?>
                                     </div>
 
-                                    <p class="text-sm font-normal text-[#7A7A7A]">
+                                    <span class="block text-sm font-normal text-color">
                                         <?php the_content() ?>
-                                    </p>
+                                    </span>
                                 </div>
                             </div>
                         <?php endwhile;

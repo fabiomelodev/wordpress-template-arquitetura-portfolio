@@ -3,12 +3,12 @@
     <div class="container flex flex-wrap gap-y-20 xl:gap-y-40 justify-center">
 
         <div class="w-full lg:w-8/12">
-            <h2 class="section-title text-center">
+            <h2 class="section-title text-center title-color">
                 Projetos realizados
             </h2>
 
             <?php if (get_field('projetos_descricao')): ?>
-                <p class="section-description text-center">
+                <p class="section-description text-center text-color">
                     <?php echo get_field('projetos_descricao'); ?>
                 </p>
             <?php endif; ?>
@@ -40,9 +40,9 @@
                             </h3>
 
                             <div class="rounded-2xl border border-[#F0F0F0] bg-white p-4">
-                                <p class="text-sm font-normal text-[#7A7A7A]">
+                                <span class="block text-sm font-normal text-color">
                                     <?php the_content() ?>
-                                </p>
+                                </span>
                             </div>
                         </div>
 
@@ -55,7 +55,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="h-[400px] xl:pb-8">
-                                            <div class="w-full h-full overflow-hidden rounded-3xl bg-[#87928B] js-project-open-modal"
+                                            <div class="w-full h-full overflow-hidden rounded-3xl bg-color-primary js-project-open-modal"
                                                 data-slug="<?php echo basename(get_permalink(get_the_ID())) ?>">
                                                 <?php if (get_field('foto_1')): ?>
                                                     <img class="w-full h-full object-cover js-project-item-image"
@@ -70,7 +70,7 @@
                                     <div class="swiper-slide">
 
                                         <div class="h-[400px] xl:pt-8">
-                                            <div class="w-full h-full overflow-hidden rounded-3xl bg-[#87928B] js-project-open-modal"
+                                            <div class="w-full h-full overflow-hidden rounded-3xl bg-color-primary js-project-open-modal"
                                                 data-slug="<?php echo basename(get_permalink(get_the_ID())) ?>">
                                                 <?php if (get_field('foto_2')): ?>
                                                     <img class="w-full h-full object-cover js-project-item-image"
@@ -84,7 +84,7 @@
 
                                     <div class="swiper-slide">
                                         <div class="h-[400px] xl:pb-8">
-                                            <div class="w-full h-full overflow-hidden rounded-3xl bg-[#87928B] js-project-open-modal"
+                                            <div class="w-full h-full overflow-hidden rounded-3xl bg-color-primary js-project-open-modal"
                                                 data-slug="<?php echo basename(get_permalink(get_the_ID())) ?>">
                                                 <?php if (get_field('foto_3')): ?>
                                                     <img class="w-full h-full object-cover js-project-item-image"
@@ -98,33 +98,6 @@
                                 </div>
                             </div>
                             <!-- end swiper -->
-
-                            <div class="hidden h-[400px] pb-8">
-                                <div class="w-full h-full overflow-hidden rounded-3xl bg-[#87928B]">
-                                    <?php if (get_field('foto_1')): ?>
-                                        <img class="w-full h-full object-cover" src="<?php echo get_field('foto_1') ?>"
-                                            alt="<?php echo get_the_title() . ' - ' . get_bloginfo(); ?>" />
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-
-                            <div class="hidden h-[400px] pt-8">
-                                <div class="w-full h-full overflow-hidden rounded-3xl bg-[#87928B]">
-                                    <?php if (get_field('foto_2')): ?>
-                                        <img class="w-full h-full object-cover" src="<?php echo get_field('foto_2') ?>"
-                                            alt="<?php echo get_the_title() . ' - ' . get_bloginfo(); ?>" />
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-
-                            <div class="hidden h-[400px] pb-8">
-                                <div class="w-full h-full overflow-hidden rounded-3xl bg-[#87928B]">
-                                    <?php if (get_field('foto_3')): ?>
-                                        <img class="w-full h-full object-cover" src="<?php echo get_field('foto_3') ?>"
-                                            alt="<?php echo get_the_title() . ' - ' . get_bloginfo(); ?>" />
-                                    <?php endif; ?>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 <?php endwhile;
@@ -140,6 +113,25 @@
     <div class="modal-projects js-projects-modal">
 
         <div class="w-full h-full top-0 left-0 absolute js-modal-close"></div>
+
+        <!-- button close -->
+        <button class="transition duration-300 top-4 right-4 border border-white rounded-full absolute flex items-center gap-x-2 text-white hover:text-black hover:bg-white py-2 pl-4 pr-2
+            js-modal-close">
+            <span>
+                Fechar
+            </span>
+
+            <div class="w-8 h-8 border border-white rounded-full flex justify-center items-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </div>
+
+
+        </button>
+        <!-- end button close -->
 
         <div class="container h-[900px] relative flex justify-center items-center">
 

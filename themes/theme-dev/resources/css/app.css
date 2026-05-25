@@ -15,11 +15,11 @@
   }
 
   .section-title {
-    @apply text-2xl lg:text-5xl font-bold font-cinzel uppercase text-[#3D3D3D] mb-8;
+    @apply text-2xl lg:text-5xl font-bold font-cinzel uppercase mb-8;
   }
 
   .section-description {
-    @apply text-base lg:text-xl font-normal text-[#3D3D3D];
+    @apply text-base lg:text-xl font-normal;
   }
 
   .project-item {

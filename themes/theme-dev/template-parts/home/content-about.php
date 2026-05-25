@@ -30,13 +30,13 @@
 
         <div class="lg:w-4/12 mt-6 lg:mt-0">
             <?php if (get_field('sobre_nome')): ?>
-                <h2 class="section-title">
+                <h2 class="section-title title-color">
                     <?php echo get_field('sobre_nome'); ?>
                 </h2>
             <?php endif; ?>
 
             <?php if (get_field('sobre')): ?>
-                <p class="section-description">
+                <p class="section-description text-color">
                     <?php echo get_field('sobre'); ?>
                 </p>
             <?php endif; ?>

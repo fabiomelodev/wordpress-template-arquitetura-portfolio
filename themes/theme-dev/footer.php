@@ -17,7 +17,7 @@
 </div><!-- #page -->
 
 <!-- footer -->
-<footer class="bg-[#87928B] pt-20 pb-6">
+<footer class="bg-color-primary pt-20 pb-6">
 
     <div class="container grid grid-cols-1 lg:grid-cols-3 gap-y-20 gap-x-4">
 
@@ -45,7 +45,7 @@
                             <li>
                                 <a class="flex items-center" href="<?php echo get_field('instagram', 'option'); ?>"
                                     target="_blank" rel="noreferrer noopener">
-                                    <?php echo get_template_part('template-parts/icons/content', 'instagram', get_icon_setting('w-6 h-6 fill-white fill-color-primary-hover')); ?>
+                                    <?php echo get_template_part('template-parts/icons/content', 'instagram', get_icon_setting('w-6 h-6 fill-white hover:opacity-90')); ?>
 
                                     <span style="font-size:0">
                                         Instagram
@@ -58,7 +58,7 @@
                             <li>
                                 <a class="flex items-center" href="<?php echo get_field('facebook', 'option'); ?>"
                                     target="_blank" rel="noreferrer noopener">
-                                    <?php echo get_template_part('template-parts/icons/content', 'facebook', get_icon_setting('w-6 h-6 fill-white fill-color-primary-hover')); ?>
+                                    <?php echo get_template_part('template-parts/icons/content', 'facebook', get_icon_setting('w-6 h-6 fill-white hover:opacity-90')); ?>
 
                                     <span style="font-size:0">
                                         Facebook
@@ -71,7 +71,7 @@
                             <li>
                                 <a class="flex items-center" href="<?php echo get_field('youtube', 'option'); ?>"
                                     target="_blank" rel="noreferrer noopener">
-                                    <?php echo get_template_part('template-parts/icons/content', 'youtube', get_icon_setting('w-6 h-6 fill-white fill-color-primary-hover')); ?>
+                                    <?php echo get_template_part('template-parts/icons/content', 'youtube', get_icon_setting('w-6 h-6 fill-white hover:opacity-90')); ?>
 
                                     <span style="font-size:0">
                                         Youtube

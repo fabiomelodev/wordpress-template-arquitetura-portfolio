@@ -1,4 +1,4 @@
-<section class="bg-white">
+<section class="hidden lg:block bg-white">
 
     <div class="container flex flex-wrap justify-between mx-auto px-4">
 
@@ -15,7 +15,7 @@
                             </svg>
                         </span>
 
-                        <p class="text-sm text-[#525252]">
+                        <p class="text-sm text-color text-color-primary-hover">
                             <?php echo get_field('endereco', 'option'); ?>
                         </p>
                     </li>
@@ -23,7 +23,8 @@
 
                 <?php if (get_field('e-mail', 'option')): ?>
                     <li class="py-2">
-                        <a class="flex items-center gap-x-2" href="#" target="_blank" rel="noreferrer noopener">
+                        <a class="flex items-center gap-x-2" href="mailto:<?php echo get_field('e-mail', 'option'); ?>"
+                            target="_blank" rel="noreferrer noopener">
                             <span>
                                 <svg class="w-4 h-4 fill-[#525252]" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
@@ -32,7 +33,7 @@
                                 </svg>
                             </span>
 
-                            <p class="text-sm text-[#525252]">
+                            <p class="text-sm text-color text-color-primary-hover">
                                 <?php echo get_field('e-mail', 'option'); ?>
                             </p>
                         </a>
@@ -41,7 +42,8 @@
 
                 <?php if (get_field('telefone', 'option')): ?>
                     <li class="py-2">
-                        <a class="flex items-center gap-x-2" href="#" target="_blank" rel="noreferrer noopener">
+                        <a class="flex items-center gap-x-2" href="tel:<?php echo get_field('telefone', 'option'); ?>"
+                            target="_blank" rel="noreferrer noopener">
                             <span>
                                 <svg class="w-4 h-4 fill-[#525252]" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
@@ -50,7 +52,7 @@
                                 </svg>
                             </span>
 
-                            <p class="text-sm text-[#525252]">
+                            <p class="text-sm text-color text-color-primary-hover">
                                 <?php echo get_field('telefone', 'option'); ?>
                             </p>
                         </a>
