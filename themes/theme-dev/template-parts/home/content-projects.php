@@ -3,12 +3,13 @@
     <div class="container flex flex-wrap gap-y-20 xl:gap-y-40 justify-center">
 
         <div class="w-full lg:w-8/12">
-            <h2 class="section-title text-center title-color">
+            <h2 class="section-title text-center title-color" data-aos="fade-up" data-aos-duration="1000">
                 Projetos realizados
             </h2>
 
             <?php if (get_field('projetos_descricao')): ?>
-                <p class="section-description text-center text-color">
+                <p class="section-description text-center text-color" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="500">
                     <?php echo get_field('projetos_descricao'); ?>
                 </p>
             <?php endif; ?>
@@ -35,11 +36,13 @@
                     <div class="project-item">
 
                         <div class="project-item-col col-span-full xl:col-span-5">
-                            <h3 class="text-4xl lg:text-6xl xl:text-7xl font-bold font-cinzel text-[#E0E0E0] mb-6 lg:mb-10">
+                            <h3 class="text-4xl lg:text-6xl xl:text-7xl font-bold font-cinzel text-[#E0E0E0] mb-6 lg:mb-10"
+                                data-aos="fade-right" data-aos-duration="1000">
                                 <?php the_title() ?>
                             </h3>
 
-                            <div class="rounded-2xl border border-[#F0F0F0] bg-white p-4">
+                            <div class="rounded-2xl border border-[#F0F0F0] bg-white p-4" data-aos="fade-up"
+                                data-aos-duration="1000" data-aos-delay="200">
                                 <span class="block text-sm font-normal text-color">
                                     <?php the_content() ?>
                                 </span>

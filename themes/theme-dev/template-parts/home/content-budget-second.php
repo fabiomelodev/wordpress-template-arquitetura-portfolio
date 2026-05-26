@@ -13,7 +13,8 @@ if (get_field('segundo_orcamento_imagem_de_fundo')) {
         <div
             class="col-span-full lg:col-span-5 h-full flex flex-col justify-center items-center gap-y-6 bg-color-primary bg-opacity-90 px-10">
 
-            <p class="text-xl lg:text-2xl font-bold font-cinzel text-center text-white">
+            <p class="text-xl lg:text-2xl font-bold font-cinzel text-center text-white" data-aos="fade-up"
+                data-aos-duration="1000">
                 Transforme seu apartamento em um espaço único e especial
             </p>
 
@@ -21,7 +22,7 @@ if (get_field('segundo_orcamento_imagem_de_fundo')) {
                 href="<?php echo get_field('segundo_orcamento_botao_de_acao')['url'] ? get_field('segundo_orcamento_botao_de_acao')['url'] : '#'; ?>"
                 title="<?php echo get_field('segundo_orcamento_botao_de_acao')['title'] ? get_field('segundo_orcamento_botao_de_acao')['title'] : ''; ?>"
                 target="<?php echo get_field('segundo_orcamento_botao_de_acao')['target'] ? get_field('segundo_orcamento_botao_de_acao')['target'] : ''; ?>"
-                rel="noreferrer noopener">
+                rel="noreferrer noopener" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <?php echo get_field('segundo_orcamento_botao_de_acao')['title'] ? get_field('segundo_orcamento_botao_de_acao')['title'] : 'Faça orçamento'; ?>
             </a>
         </div>

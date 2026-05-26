@@ -5,7 +5,7 @@
         <div class="w-full lg:w-6/12 flex items-center">
 
             <ul class="grid grid-cols-1 lg:grid-cols-3 gap-x-4">
-                <?php if (get_field('endereco', 'option')): ?>
+                <?php if (get_field('informacoes_gerais_endereco', 'option')): ?>
                     <li class="flex items-center gap-x-2 py-2">
                         <span>
                             <svg class="w-4 h-4 fill-[#525252]" xmlns="http://www.w3.org/2000/svg"
@@ -16,15 +16,16 @@
                         </span>
 
                         <p class="text-sm text-color text-color-primary-hover">
-                            <?php echo get_field('endereco', 'option'); ?>
+                            <?php echo get_field('informacoes_gerais_endereco', 'option'); ?>
                         </p>
                     </li>
                 <?php endif; ?>
 
-                <?php if (get_field('e-mail', 'option')): ?>
+                <?php if (get_field('informacoes_gerais_email', 'option')): ?>
                     <li class="py-2">
-                        <a class="flex items-center gap-x-2" href="mailto:<?php echo get_field('e-mail', 'option'); ?>"
-                            target="_blank" rel="noreferrer noopener">
+                        <a class="flex items-center gap-x-2"
+                            href="mailto:<?php echo get_field('informacoes_gerais_email', 'option'); ?>" target="_blank"
+                            rel="noreferrer noopener">
                             <span>
                                 <svg class="w-4 h-4 fill-[#525252]" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
@@ -34,16 +35,17 @@
                             </span>
 
                             <p class="text-sm text-color text-color-primary-hover">
-                                <?php echo get_field('e-mail', 'option'); ?>
+                                <?php echo get_field('informacoes_gerais_email', 'option'); ?>
                             </p>
                         </a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (get_field('telefone', 'option')): ?>
+                <?php if (get_field('informacoes_gerais_telefone', 'option')): ?>
                     <li class="py-2">
-                        <a class="flex items-center gap-x-2" href="tel:<?php echo get_field('telefone', 'option'); ?>"
-                            target="_blank" rel="noreferrer noopener">
+                        <a class="flex items-center gap-x-2"
+                            href="tel:<?php echo get_field('informacoes_gerais_telefone', 'option'); ?>" target="_blank"
+                            rel="noreferrer noopener">
                             <span>
                                 <svg class="w-4 h-4 fill-[#525252]" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
@@ -53,7 +55,7 @@
                             </span>
 
                             <p class="text-sm text-color text-color-primary-hover">
-                                <?php echo get_field('telefone', 'option'); ?>
+                                <?php echo get_field('informacoes_gerais_telefone', 'option'); ?>
                             </p>
                         </a>
                     </li>
@@ -69,10 +71,11 @@
                 </p>
 
                 <ul class="flex items-center gap-x-2">
-                    <?php if (get_field('instagram', 'option')): ?>
+                    <?php if (get_field('informacoes_gerais_instagram', 'option')): ?>
                         <li>
-                            <a class="flex items-center" href="<?php echo get_field('instagram', 'option'); ?>"
-                                target="_blank" rel="noreferrer noopener">
+                            <a class="flex items-center"
+                                href="<?php echo get_field('informacoes_gerais_instagram', 'option'); ?>" target="_blank"
+                                rel="noreferrer noopener">
                                 <?php echo get_template_part('template-parts/icons/content', 'instagram', get_icon_setting('w-6 h-6 fill-[#525252] fill-color-primary-hover')); ?>
 
                                 <span style="font-size:0">
@@ -82,10 +85,11 @@
                         </li>
                     <?php endif; ?>
 
-                    <?php if (get_field('facebook', 'option')): ?>
+                    <?php if (get_field('informacoes_gerais_facebook', 'option')): ?>
                         <li>
-                            <a class="flex items-center" href="<?php echo get_field('facebook', 'option'); ?>"
-                                target="_blank" rel="noreferrer noopener">
+                            <a class="flex items-center"
+                                href="<?php echo get_field('informacoes_gerais_facebook', 'option'); ?>" target="_blank"
+                                rel="noreferrer noopener">
                                 <?php echo get_template_part('template-parts/icons/content', 'facebook', get_icon_setting('w-6 h-6 fill-[#525252] fill-color-primary-hover')); ?>
 
                                 <span style="font-size:0">
@@ -95,10 +99,11 @@
                         </li>
                     <?php endif; ?>
 
-                    <?php if (get_field('youtube', 'option')): ?>
+                    <?php if (get_field('informacoes_gerais_youtube', 'option')): ?>
                         <li>
-                            <a class="flex items-center" href="<?php echo get_field('youtube', 'option'); ?>"
-                                target="_blank" rel="noreferrer noopener">
+                            <a class="flex items-center"
+                                href="<?php echo get_field('informacoes_gerais_youtube', 'option'); ?>" target="_blank"
+                                rel="noreferrer noopener">
                                 <?php echo get_template_part('template-parts/icons/content', 'youtube', get_icon_setting('w-6 h-6 fill-[#525252] fill-color-primary-hover')); ?>
 
                                 <span style="font-size:0">

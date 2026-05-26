@@ -16,6 +16,10 @@
 
 </div><!-- #page -->
 
+<!-- whatsapp float -->
+<?php echo get_template_part('template-parts/components/content', 'whatsapp-float'); ?>
+<!-- end whatsapp float -->
+
 <!-- footer -->
 <footer class="bg-color-primary pt-20 pb-6">
 
@@ -34,17 +38,18 @@
         </div>
 
         <div class="flex lg:justify-center">
-            <?php if (get_field('instagram', 'option') || get_field('facebook', 'option') || get_field('youtube', 'option')): ?>
+            <?php if (get_field('informacoes_gerais_instagram', 'option') || get_field('informacoes_gerais_facebook', 'option') || get_field('informacoes_gerais_youtube', 'option')): ?>
                 <div>
                     <h3 class="text-xl font-bold font-cinzel uppercase text-white">
                         Redes sociais
                     </h3>
 
                     <ul class="flex gap-x-4 mt-4">
-                        <?php if (get_field('instagram', 'option')): ?>
+                        <?php if (get_field('informacoes_gerais_instagram', 'option')): ?>
                             <li>
-                                <a class="flex items-center" href="<?php echo get_field('instagram', 'option'); ?>"
-                                    target="_blank" rel="noreferrer noopener">
+                                <a class="flex items-center"
+                                    href="<?php echo get_field('informacoes_gerais_instagram', 'option'); ?>" target="_blank"
+                                    rel="noreferrer noopener">
                                     <?php echo get_template_part('template-parts/icons/content', 'instagram', get_icon_setting('w-6 h-6 fill-white hover:opacity-90')); ?>
 
                                     <span style="font-size:0">
@@ -54,10 +59,11 @@
                             </li>
                         <?php endif; ?>
 
-                        <?php if (get_field('facebook', 'option')): ?>
+                        <?php if (get_field('informacoes_gerais_facebook', 'option')): ?>
                             <li>
-                                <a class="flex items-center" href="<?php echo get_field('facebook', 'option'); ?>"
-                                    target="_blank" rel="noreferrer noopener">
+                                <a class="flex items-center"
+                                    href="<?php echo get_field('informacoes_gerais_facebook', 'option'); ?>" target="_blank"
+                                    rel="noreferrer noopener">
                                     <?php echo get_template_part('template-parts/icons/content', 'facebook', get_icon_setting('w-6 h-6 fill-white hover:opacity-90')); ?>
 
                                     <span style="font-size:0">
@@ -67,10 +73,11 @@
                             </li>
                         <?php endif; ?>
 
-                        <?php if (get_field('youtube', 'option')): ?>
+                        <?php if (get_field('informacoes_gerais_youtube', 'option')): ?>
                             <li>
-                                <a class="flex items-center" href="<?php echo get_field('youtube', 'option'); ?>"
-                                    target="_blank" rel="noreferrer noopener">
+                                <a class="flex items-center"
+                                    href="<?php echo get_field('informacoes_gerais_youtube', 'option'); ?>" target="_blank"
+                                    rel="noreferrer noopener">
                                     <?php echo get_template_part('template-parts/icons/content', 'youtube', get_icon_setting('w-6 h-6 fill-white hover:opacity-90')); ?>
 
                                     <span style="font-size:0">
