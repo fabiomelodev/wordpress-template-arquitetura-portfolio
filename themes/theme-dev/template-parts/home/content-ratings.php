@@ -3,7 +3,7 @@
     <div class="container flex flex-col gap-y-10 xl:gap-y-20">
 
         <div>
-            <h2 class="section-title text-center title-color">
+            <h2 class="section-title text-center title-color" data-aos="fade-up" data-aos-duration="1000">
                 Avaliações
             </h2>
         </div>
@@ -22,11 +22,15 @@
 
                     $ratings = new WP_Query($args);
 
+                    $delay = 0;
+
                     if ($ratings->have_posts()):
                         while ($ratings->have_posts()):
-                            $ratings->the_post(); ?>
+                            $ratings->the_post();
+                            $delay = $delay + 500; ?>
                             <div class="swiper-slide">
-                                <div class="rounded-2xl border border-gray-100 p-4">
+                                <div class="rounded-2xl border border-gray-100 p-4" data-aos="fade-up" data-aos-duration="5000"
+                                    data-aos-delay="<?php echo $delay; ?>">
                                     <p class="text-lg font-bold">
                                         <?php the_title() ?>
                                     </p>

@@ -112,7 +112,8 @@
 
                     <div class="w-8/12 lg:w-3/12 flex items-center">
                         <?php if (get_custom_logo()): ?>
-                            <div class="w-[52px] lg:w-[100px]">
+                            <div
+                                class="w-[52px] lg:w-[100px] <?php echo get_field('informacoes_gerais_arredondar_logo', 'option') == 'Sim' ? 'rounded-full overflow-hidden' : ''; ?>">
                                 <?php echo get_custom_logo(); ?>
                             </div>
                         <?php else: ?>
