@@ -12,7 +12,7 @@
 
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html class="overflow-x-hidden" <?php language_attributes(); ?>>
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -85,7 +85,7 @@
     </style>
 </head>
 
-<body <?php body_class(); ?>>
+<body class="overflow-x-hidden" <?php body_class(); ?>>
 
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', ''); ?></a>
